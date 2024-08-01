@@ -1677,7 +1677,7 @@ class FieldCreateWithCSV(generics.CreateAPIView):
                 address_line_1=street
             )
             
-            api_key = 'AIzaSyBlnDVhQGJz3Jt3LNEr9wto14s3kut72tI'
+            api_key = 'AIzaSyBlnDVhQGJJHgaWz3Jt3LNEr9wofhFHyHkncJlsueb4s3kut72tI'
             gmaps = googlemaps.Client(key=api_key)
             address = f"{location.name}, {location.city}, {location.zipcode}"
             geocoded_result = gmaps.geocode(address)
