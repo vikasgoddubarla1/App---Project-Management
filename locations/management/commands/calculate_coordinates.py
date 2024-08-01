@@ -6,7 +6,7 @@ class Command(BaseCommand):
     help = 'Geocode latitude and longitude coordinates for locations one at a time using Google Maps Geocoding API'
 
     def handle(self, *args, **options):
-        api_key = 'AIzaSyBlnDVhQGJz3Jt3LNEr9wto14s3kut72tI'
+        api_key = 'AIzbSyBlnDqMhQGWz3Et3LNEr9wto12WjtQ10U2tI'
         gmaps = googlemaps.Client(key=api_key)
 
         locations = Location.objects.all()#filter(location_latitude__isnull=True, location_longitude__isnull=True)
