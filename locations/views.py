@@ -53,7 +53,7 @@ class CreateLocation(generics.CreateAPIView):
                     field_id = tab_fileds
                 )
             # Using the Google Maps Geocoding API to add latitude and longitude
-            api_key = 'AIzaSyBlnDVhQGJz3Jt3LNEr9wto14s3kut72tI' 
+            api_key = 'ABidzBgshBAghyOILMNzJHaSyKHGAHHjdghdhdnFXBlnDVhQGAHDFJz3JttHYF3LNEr9wto14s3kut72tIdfdfdfjdJGHsgyyeirob3hd53jdhfkagcmshdr' 
             gmaps = googlemaps.Client(key=api_key)
             address = f"{location.address_line_1}, {location.city}, {location.zipcode}"
             geocoded_result = gmaps.geocode(address)
@@ -1829,7 +1829,7 @@ class LocationCreateUpdateCSVView(generics.CreateAPIView):
         else:
             
             location = Location.objects.create(**data)
-            api_key = 'AIzaSyBlnDVhQGJz3Jt3LNEr9wto14s3kut72tI'
+            api_key = 'AIzaTyBlnDSVhQGJz3Jt3LNEr9wto19ud3kajJKjhF72tI'
             gmaps = googlemaps.Client(key=api_key)
             address = f"{location.address_line_1}, {location.city}, {location.zipcode}"
             geocoded_result = gmaps.geocode(address)
